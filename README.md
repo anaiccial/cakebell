@@ -6,13 +6,24 @@ If you need help or have questions, please contact:
 
 ---
 
+[Deutsche Fassung](datenschutz) · [Impressum](impressum)
+
+---
+
 # Privacy Policy for CakeBell
 
-**Last updated: October 15, 2026**
+**Last updated: October 19, 2026**
 
 ## Overview
 
-CakeBell ("the App") is a birthday reminder application that helps you remember and celebrate your contacts' birthdays. This privacy policy explains how the App handles your data.
+CakeBell ("the App") is a birthday reminder application that helps you remember and celebrate your contacts' birthdays. This privacy policy explains how the App handles your data. It also covers this website.
+
+## Controller
+
+Dr. Markus Gäth  
+Derkskamp 95  
+48163 Münster  
+Email: anaiccial@icloud.com
 
 ## How to Delete Your Data
 
@@ -51,7 +62,7 @@ To provide reliable birthday reminders via push notifications, the following dat
 - **On your device**: All contact details, relationship types, and message preferences are stored locally using AsyncStorage
 - **On our servers**: Only the minimal data listed above is stored in an encrypted AWS DynamoDB database in the EU (Frankfurt, Germany) to schedule push notifications
 
-## Data Usage
+## Data Usage and Legal Basis
 
 We use the collected data solely to:
 - Display upcoming birthdays
@@ -59,11 +70,13 @@ We use the collected data solely to:
 - Generate personalized birthday messages (locally on your device)
 - Organize contacts by relationship type
 
+Under the GDPR, displaying birthdays and sending reminders is based on Art. 6(1)(b) (providing the App you use). Processing your contacts' first names and birthdays, who do not use the App themselves, is based on Art. 6(1)(f) (legitimate interest in reminding you of their birthdays), limited to first name and day/month of birth.
+
 ## Data Sharing
 
 **We do not sell your data, and we do not share it with third parties for advertising or marketing.**
 
-Push notifications are delivered through Expo's push notification service, which acts as a relay to Apple Push Notification Service (APNs) and Google Firebase Cloud Messaging (FCM). The notification text itself includes the first name of the contact whose birthday it is (e.g. "🎂 Anna has a birthday today!"), so that first name passes through Expo, Apple, and/or Google as part of delivering the notification to your device. No other contact data (phone number, email, photo) is included in the notification payload.
+Our processors are Amazon Web Services (database and backend, Frankfurt region, EU) and Expo (650 Industries, Inc., USA) for push delivery. Push notifications are delivered through Expo's push notification service, which acts as a relay to Apple Push Notification Service (APNs) and Google Firebase Cloud Messaging (FCM). The notification text itself includes the first name of the contact whose birthday it is (e.g. "🎂 Anna has a birthday today!"), so that first name passes through Expo, Apple, and/or Google as part of delivering the notification to your device. No other contact data (phone number, email, photo) is included in the notification payload. This may involve transfers to the USA, based on the EU-US Data Privacy Framework where the provider is certified, and otherwise on the EU Commission's Standard Contractual Clauses (Art. 46(2)(c) GDPR).
 
 The App interacts with messaging applications (SMS, WhatsApp, Threema, Telegram) only when you explicitly choose to send a birthday message. These interactions are handled directly by the respective apps on your device.
 
@@ -81,7 +94,7 @@ The App requires the following permissions:
 - Daily acknowledgment records (which birthdays you've already congratulated) are automatically reset every day
 - User settings remain until you delete the App or request deletion via **Settings → Delete my data**
 - Requesting deletion via the App removes your server-side record (names, birthdays, settings, push token) immediately and permanently
-- Deleting the App removes all local data; without an explicit deletion request, server-side data becomes inactive (no more reminders are sent to a push token that no longer exists) but is not automatically purged
+- Deleting the App removes all local data; without an explicit deletion request, server-side data becomes inactive (no more reminders are sent to a push token that no longer exists) but is not automatically purged. You can request deletion by email at any time
 
 ## Data Security
 
@@ -90,9 +103,17 @@ The App requires the following permissions:
 - All communication between the App and our servers uses HTTPS/TLS encryption
 - Our backend infrastructure runs on AWS Lambda with no persistent servers, minimizing attack surface
 
+## This Website
+
+This website is hosted on GitHub Pages (GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA). When you visit it, GitHub processes technically necessary data, in particular your IP address, to deliver the page and keep the service secure (Art. 6(1)(f) GDPR). GitHub is certified under the EU-US Data Privacy Framework. See [GitHub's privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). This website uses no cookies, tracking or analytics.
+
+If you contact us by email, we use your details only to answer your request and delete them once it is resolved, unless legal retention obligations apply.
+
 ## Your Rights
 
-You can:
+Under the GDPR you have the right to access (Art. 15), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), data portability (Art. 20), to object to processing based on Art. 6(1)(f) (Art. 21), and to lodge a complaint with a data protection supervisory authority (Art. 77). Send any request to anaiccial@icloud.com.
+
+You can also:
 - Revoke permissions at any time through your device settings
 - Turn off **Settings → Enable Reminders** at any time to stop syncing your contacts' names and birthdays to our server entirely — no data is sent while reminders are disabled
 - Request deletion of your server-side data (synced names and birthdays, reminder settings, push token) at any time via **Settings → Delete my data** inside the App. This immediately and permanently removes your entry from our database; reminders are turned off until you re-enable them, which starts a fresh sync
