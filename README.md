@@ -76,7 +76,7 @@ Under the GDPR, displaying birthdays and sending reminders is based on Art. 6(1)
 
 **We do not sell your data, and we do not share it with third parties for advertising or marketing.**
 
-Our processors are Amazon Web Services (database and backend, Frankfurt region, EU) and Expo (650 Industries, Inc., USA) for push delivery. Push notifications are delivered through Expo's push notification service, which acts as a relay to Apple Push Notification Service (APNs) and Google Firebase Cloud Messaging (FCM). The notification text itself includes the first name of the contact whose birthday it is (e.g. "🎂 Anna has a birthday today!"), so that first name passes through Expo, Apple, and/or Google as part of delivering the notification to your device. No other contact data (phone number, email, photo) is included in the notification payload. This may involve transfers to the USA, based on the EU-US Data Privacy Framework where the provider is certified, and otherwise on the EU Commission's Standard Contractual Clauses (Art. 46(2)(c) GDPR).
+Our processors are Amazon Web Services (database and backend, Frankfurt region, EU) and Expo (650 Industries, Inc., USA) for push delivery. Push notifications are delivered through Expo's push notification service, which acts as a relay to Apple Push Notification Service (APNs) and Google Firebase Cloud Messaging (FCM). The notification text itself includes the first name of the contact whose birthday it is (e.g. "🎂 Anna has a birthday today!"), so that first name passes through Expo, Apple, and/or Google as part of delivering the notification to your device. No other contact data (phone number, email, photo) is included in the notification payload. This involves transfers to the USA. Transfers to Expo are based on the EU Commission's Standard Contractual Clauses (Art. 46(2)(c) GDPR); Apple and Google are certified under the EU-US Data Privacy Framework.
 
 The App interacts with messaging applications (SMS, WhatsApp, Threema, Telegram) only when you explicitly choose to send a birthday message. These interactions are handled directly by the respective apps on your device.
 
@@ -94,7 +94,7 @@ The App requires the following permissions:
 - Daily acknowledgment records (which birthdays you've already congratulated) are automatically reset every day
 - User settings remain until you delete the App or request deletion via **Settings → Delete my data**
 - Requesting deletion via the App removes your server-side record (names, birthdays, settings, push token) immediately and permanently
-- Deleting the App removes all local data; without an explicit deletion request, server-side data becomes inactive (no more reminders are sent to a push token that no longer exists) but is not automatically purged. You can request deletion by email at any time
+- Deleting the App removes all local data. Your server-side record is deleted automatically as soon as a push notification shows that your device is no longer registered, and at the latest 12 months after the App last synced. You can also request deletion by email at any time
 
 ## Data Security
 

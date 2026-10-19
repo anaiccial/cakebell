@@ -65,7 +65,7 @@ Solange die Erinnerungen ausgeschaltet sind, werden keine Daten übertragen.
 - **Amazon Web Services (AWS):** Speicherung der übertragenen Daten in einer verschlüsselten DynamoDB-Datenbank und Betrieb des Backends (AWS Lambda) in der Region Frankfurt (EU).
 - **Expo (650 Industries, Inc., USA):** Zustellung der Push-Mitteilungen. Expo leitet sie an den Apple Push Notification Service (APNs) bzw. Google Firebase Cloud Messaging (FCM) weiter.
 
-Der Text der Push-Mitteilung enthält den Vornamen des Kontakts, der Geburtstag hat (z. B. „🎂 Anna hat heute Geburtstag!“). Dieser Vorname läuft deshalb bei der Zustellung über Expo, Apple und/oder Google. Andere Kontaktdaten sind nicht in der Mitteilung enthalten. Dabei können Daten in die USA übermittelt werden. Die Übermittlung erfolgt auf Grundlage des EU-US Data Privacy Framework, soweit der jeweilige Anbieter danach zertifiziert ist, und ansonsten auf Grundlage der Standardvertragsklauseln der EU-Kommission (Art. 46 Abs. 2 lit. c DSGVO).
+Der Text der Push-Mitteilung enthält den Vornamen des Kontakts, der Geburtstag hat (z. B. „🎂 Anna hat heute Geburtstag!“). Dieser Vorname läuft deshalb bei der Zustellung über Expo, Apple und/oder Google. Andere Kontaktdaten sind nicht in der Mitteilung enthalten. Dabei werden Daten in die USA übermittelt. Die Übermittlung an Expo erfolgt auf Grundlage der Standardvertragsklauseln der EU-Kommission (Art. 46 Abs. 2 lit. c DSGVO). Apple und Google sind nach dem EU-US Data Privacy Framework zertifiziert.
 
 Mit Messenger-Apps (SMS, WhatsApp, Threema, Telegram) arbeitet die App nur zusammen, wenn du ausdrücklich eine Geburtstagsnachricht verschickst. Das übernimmt dann die jeweilige App auf deinem Gerät.
 
@@ -83,7 +83,7 @@ Die App benötigt folgende Berechtigungen:
 - Die Angabe, zu welchen Geburtstagen du schon gratuliert hast, wird täglich automatisch zurückgesetzt.
 - Deine Einstellungen bleiben gespeichert, bis du die App löschst oder über **Einstellungen → Meine Daten löschen** die Löschung veranlasst.
 - Die Löschung in der App entfernt deinen Eintrag auf dem Server (Namen, Geburtstage, Einstellungen, Push-Token) sofort und endgültig.
-- Wenn du die App deinstallierst, werden alle lokalen Daten entfernt. Ohne ausdrückliche Löschanfrage werden die Daten auf dem Server inaktiv (es gehen keine Erinnerungen mehr an einen nicht mehr gültigen Push-Token), aber nicht automatisch gelöscht. Du kannst die Löschung jederzeit per E-Mail verlangen.
+- Wenn du die App deinstallierst, werden alle lokalen Daten entfernt. Dein Eintrag auf dem Server wird automatisch gelöscht, sobald sich bei einer Push-Mitteilung zeigt, dass dein Gerät nicht mehr registriert ist, spätestens aber 12 Monate nach der letzten Synchronisierung durch die App. Du kannst die Löschung außerdem jederzeit per E-Mail verlangen.
 
 ## Datensicherheit
 
