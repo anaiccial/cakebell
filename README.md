@@ -8,7 +8,7 @@ If you need help or have questions, please contact:
 
 # Privacy Policy for CakeBell
 
-**Last updated: September 1, 2026**
+**Last updated: October 15, 2026**
 
 ## Overview
 
@@ -30,18 +30,19 @@ If you've already uninstalled the App and still want your data deleted, email **
 ## Data Collection and Storage
 
 ### What Data We Access
-- **Contact Information**: The App reads contact names and birthdays from your device's address book
+- **Contact Information**: The App reads contact names and birthdays from your device's address book (full names are only shown inside the App)
 - **Contact Photos**: Profile pictures from your contacts (if available) — these are never transmitted
 - **User Preferences**: Your settings including reminder times, intervals, and relationship categorizations
 
 ### What Data We Transmit
 To provide reliable birthday reminders via push notifications, the following data is securely transmitted to our servers:
-- **The full name (as stored in your address book) and birthday date** (month and day only) of contacts with birthdays
-- **Your reminder settings** (reminder time, interval, enabled/disabled)
+- **The first name and birthday date** (month and day only) of contacts with birthdays — last names are not transmitted
+- **The contact's internal identifier from your address book**, so a birthday you have congratulated can be marked as done
+- **Your reminder settings** (reminder time, interval, enabled/disabled, app language and time zone offset)
 - **Your device's push notification token** (assigned by Apple/Google, not personally identifiable)
 
 ### What Data We Do NOT Transmit
-- No phone numbers, email addresses, or photos
+- No last names, phone numbers, email addresses, or photos
 - No contact data of people without birthdays
 - No message content or communication history
 - No device identifiers, location data, or usage analytics
@@ -62,7 +63,7 @@ We use the collected data solely to:
 
 **We do not sell your data, and we do not share it with third parties for advertising or marketing.**
 
-Push notifications are delivered through Expo's push notification service, which acts as a relay to Apple Push Notification Service (APNs) and Google Firebase Cloud Messaging (FCM). The notification text itself includes the name of the contact whose birthday it is (e.g. "🎂 Anna Schmidt has a birthday today!"), so that name passes through Expo, Apple, and/or Google as part of delivering the notification to your device. No other contact data (phone number, email, photo) is included in the notification payload.
+Push notifications are delivered through Expo's push notification service, which acts as a relay to Apple Push Notification Service (APNs) and Google Firebase Cloud Messaging (FCM). The notification text itself includes the first name of the contact whose birthday it is (e.g. "🎂 Anna has a birthday today!"), so that first name passes through Expo, Apple, and/or Google as part of delivering the notification to your device. No other contact data (phone number, email, photo) is included in the notification payload.
 
 The App interacts with messaging applications (SMS, WhatsApp, Threema, Telegram) only when you explicitly choose to send a birthday message. These interactions are handled directly by the respective apps on your device.
 
