@@ -115,7 +115,7 @@ Under the GDPR you have the right to access (Art. 15), rectification (Art. 16), 
 
 You can also:
 - Revoke permissions at any time through your device settings
-- Turn off **Settings → Enable Reminders** at any time to stop syncing your contacts' names and birthdays to our server entirely — no data is sent while reminders are disabled
+- Turn off **Settings → Enable Reminders** at any time: your server-side record is deleted right away and no data is sent while reminders are disabled. Turning reminders back on starts a fresh sync
 - Request deletion of your server-side data (synced names and birthdays, reminder settings, push token) at any time via **Settings → Delete my data** inside the App. This immediately and permanently removes your entry from our database; reminders are turned off until you re-enable them, which starts a fresh sync
 - Delete all App data, including local data on your device, by uninstalling the application
 - Modify relationship types and messaging preferences within the App

@@ -44,7 +44,7 @@ Damit Geburtstagserinnerungen zuverlässig per Push-Mitteilung ankommen, werden 
 - **Deine Erinnerungs-Einstellungen** (Uhrzeit, Intervall, ein/aus, App-Sprache und Zeitzonen-Abweichung).
 - **Der Push-Token deines Geräts**, den Apple bzw. Google vergeben.
 
-Solange die Erinnerungen ausgeschaltet sind, werden keine Daten übertragen.
+Wenn du die Erinnerungen ausschaltest, wird dein Eintrag auf dem Server sofort gelöscht. Solange sie ausgeschaltet sind, werden keine Daten übertragen.
 
 ### Was nicht übertragen wird
 - Keine Nachnamen, Telefonnummern, E-Mail-Adressen oder Fotos
@@ -115,7 +115,7 @@ Du hast nach der DSGVO das Recht auf:
 
 Außerdem kannst du:
 - Berechtigungen jederzeit in den Einstellungen deines Geräts widerrufen
-- **Einstellungen → Erinnerungen aktivieren** ausschalten. Dann werden keine Namen und Geburtstage mehr an unseren Server übertragen.
+- **Einstellungen → Erinnerungen aktivieren** ausschalten. Dann wird dein Eintrag auf dem Server sofort gelöscht, und es werden keine Namen und Geburtstage mehr übertragen.
 - Alle Daten auf deinem Gerät löschen, indem du die App deinstallierst
 
 Für alle Anfragen genügt eine E-Mail an **anaiccial@icloud.com**.
