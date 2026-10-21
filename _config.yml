@@ -1,0 +1,6 @@
+title: CakeBell
+description: Never forget to wish someone a happy birthday again.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor

@@ -1,0 +1,50 @@
+{%- if page.url contains 'datenschutz' or page.url contains 'impressum' -%}
+  {%- assign lang = 'de' -%}
+{%- else -%}
+  {%- assign lang = 'en' -%}
+{%- endif -%}
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title and page.title != site.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <meta name="theme-color" content="#e67e22">
+  <link rel="icon" type="image/png" href="{{ '/assets/favicon.png' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/icon.png' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="{{ '/' | relative_url }}">
+        <img src="{{ '/assets/icon.png' | relative_url }}" alt="" width="40" height="40">
+        <span>CakeBell</span>
+      </a>
+      <nav>
+        <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Support &amp; Privacy</a>
+        <a href="{{ '/datenschutz' | relative_url }}"{% if page.url contains 'datenschutz' %} aria-current="page"{% endif %}>Datenschutz</a>
+        <a href="{{ '/impressum' | relative_url }}"{% if page.url contains 'impressum' %} aria-current="page"{% endif %}>Impressum</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <article class="content">
+      {{ content }}
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© {{ site.time | date: '%Y' }} CakeBell</span>
+      <span>
+        <a href="{{ '/' | relative_url }}">Privacy Policy</a> ·
+        <a href="{{ '/datenschutz' | relative_url }}">Datenschutz</a> ·
+        <a href="{{ '/impressum' | relative_url }}">Impressum</a>
+      </span>
+    </div>
+  </footer>
+</body>
+</html>
