@@ -2,8 +2,6 @@
 
 **Stand: 19. Oktober 2026**
 
-[English version](./) · [Impressum](impressum)
-
 ## Überblick
 
 CakeBell („die App“) ist eine App zur Erinnerung an Geburtstage deiner Kontakte. Diese Datenschutzerklärung erklärt, welche Daten die App verarbeitet, wozu und welche Rechte du hast. Sie gilt außerdem für diese Webseite.

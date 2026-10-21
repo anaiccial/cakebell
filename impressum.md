@@ -1,7 +1,5 @@
 # Impressum
 
-[Datenschutzerklärung](datenschutz) · [Privacy Policy (English)](./)
-
 ## Angaben gemäß § 5 DDG
 
 Dr. Markus Gäth  

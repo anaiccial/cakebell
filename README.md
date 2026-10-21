@@ -6,10 +6,6 @@ If you need help or have questions, please contact:
 
 ---
 
-[Deutsche Fassung](datenschutz) · [Impressum](impressum)
-
----
-
 # Privacy Policy for CakeBell
 
 **Last updated: October 19, 2026**
